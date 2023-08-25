@@ -12,7 +12,7 @@ MODIFICATION HISTORY:
 
 setInterval(main, 10);
 function main(){
-    var objTime = new Date();
+    var objTime = new Date(); //Get the current time as an object
     //Code for getting the current time
     var strLocalHour = objTime.getHours().toString(); //Get the local time in hours as a string
     var strLocalMin = objTime.getMinutes().toString(); //Get the local time in mins as a string
