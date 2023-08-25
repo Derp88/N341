@@ -1,0 +1,30 @@
+/*
+TITLE: LAB-1 Getting Started
+AUTHOR: Dylan Barkley (DGB)
+CREATE DATE: 24 Aug 2023
+PURPOSE: First intro project to using JavaScript
+LAST MODIFIED ON: 24 Aug 2023
+LAST MODIFIED BY: Dylan Barkley (DGB)
+MODIFICATION HISTORY:
+- None
+*/
+body{
+    background-color:blanchedalmond;
+    margin: 2em;
+}
+h1{
+    text-align: center;
+}
+
+.leftPara, .rightPara {
+    display:inline;
+}
+.leftPara{
+    float:left;
+    margin-left:20%;
+}
+.rightPara{
+    float:right;
+    margin-right:20%;
+}
+
