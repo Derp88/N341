@@ -1,0 +1,37 @@
+/*
+TITLE: LAB-1 Nines Balls
+AUTHOR: Dylan Barkley (DGB)
+CREATE DATE: 6 Sep 2023
+PURPOSE: Styling for a lottery simulator page
+LAST MODIFIED ON: 6 Sep 2023
+LAST MODIFIED BY: Dylan Barkley (DGB)
+MODIFICATION HISTORY:
+- None
+*/
+body{
+    background-color: #CBC6B0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+/*TOP BAR*/
+.topBar{
+    background-color: #B2AD98;
+    overflow: hidden;
+}
+.topBar .barItem{
+    color: #4C4940;
+    padding: 0.65em 1em;
+}
+.topBar .barItem:hover{
+    background-color: #4D4A41;
+    color: #CFCAB5;
+}
+.topBar span{
+    float: left;
+}
+.topBar a{
+    float: right;
+}
+/*END TOP BAR*/
