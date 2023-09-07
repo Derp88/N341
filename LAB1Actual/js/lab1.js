@@ -13,17 +13,21 @@ var intHour = 0;
 var bolDrawing = false;
 
 var objTime = new Date();
-const strDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+var strDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 strDay = strDays[objTime.getDay()];
 intHour = objTime.getHours();
 
-
-function setTopBar(elementID, output){
+function setElement(elementID, output){
     var elTopBarOutput = document.getElementById(elementID);
     elTopBarOutput.textContent += output;
 }
-setTopBar("dayItem", strDay);
-setTopBar("hourItem", intHour);
-setTopBar("drawingItem", bolDrawing);
+setElement("dayItem", strDay);
+setElement("hourItem", intHour);
+setElement("drawingItem", bolDrawing);
+setElement("daysListItem", strDays);
 
 //Idea have the object represent the winning combo
+var objDrawing = {
+    intWinningNums: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+};
+setElement("winningNums", objDrawing.intWinningNums)

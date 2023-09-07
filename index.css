@@ -1,4 +1,27 @@
 body{
-    background-color:blanchedalmond;
-    margin: 2em;
+    background-color: #CBC6B0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    color: #4C4940;
+    padding: 0.65em 1em;
+}
+.linksDiv{
+    display: inline-block;
+    text-align: left;
+}
+.container{
+    text-align: center;
+}
+a{
+    color: #4C4940;
+    padding: 0.65em 1em;
+}
+li{
+    padding: 0.65em 1em;
+}
+a:hover{
+    background-color: #4D4A41;
+    color: #CFCAB5;
 }

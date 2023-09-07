@@ -20,11 +20,11 @@ h1{
     background-color: #B2AD98;
     overflow: hidden;
 }
-.topBar .barItem{
+.barItem{
     color: #4C4940;
     padding: 0.65em 1em;
 }
-.topBar .barItem:hover{
+.barItem:hover{
     background-color: #4D4A41;
     color: #CFCAB5;
 }
@@ -35,3 +35,15 @@ h1{
     float: right;
 }
 /*END TOP BAR*/
+/*BOTTOM BAR*/
+.bottomBar{
+    background-color: #B2AD98;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px;
+    width: 100%
+}
+.bottomBar span{
+    float: left;
+}
+/*END BOTTOM BAR*/
