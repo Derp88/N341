@@ -4,10 +4,11 @@ AUTHOR: Dylan Barkley (DGB)
 CREATE DATE: 6 Sep 2023
 PURPOSE: Simulate a lotto drawing that uses balls with integers on them.
 THEME: Lottery Simulator/Lottery Webpage
-LAST MODIFIED ON: 6 Sep 2023
+LAST MODIFIED ON: 7 Sep 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-- 
+- Added bottom bar (7 Sep 2023)
+- Added basic jackpot display(7 Sep 2023)
 -->
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -25,7 +26,8 @@ MODIFICATION HISTORY:
         </div>
 
         <h1>Nines Balls - Lotto Sim</h1>
-        <p1 id = "winningNums">Winning Numbers: </p1>
+        <p id = "winningNums">Winning Numbers: </p>
+        <p id = "jackpot">Jackpot: </p>
 
         <div class = "bottomBar">
             <span class = "barItem" id = "daysListItem">Drawing Days: </span>
