@@ -6,7 +6,9 @@ PURPOSE: Styling for a lottery simulator page
 LAST MODIFIED ON: 6 Sep 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-- None
+6 Sep 2023 - Added upper bar (DGB)
+7 Sep 2023 - Added lower bar (DGB)
+8 Sep 2023 - Added hover part to show values (DGB)
 */
 body{
     background-color: #CBC6B0;
@@ -14,6 +16,27 @@ body{
 }
 h1{
     text-align: center;
+    color: #4C4940;
+}
+h2{
+    text-align: center;
+    color: #4C4940;
+}
+p{
+    color: #4C4940;
+    text-align: center;
+}
+.requiredInfo{
+    float: right;
+    position: fixed;
+    bottom: 25px;
+}
+.requiredArrays{
+    color: #CBC6B0;
+}
+.requiredArrays:hover{
+    background-color: #4D4A41;
+    color: #CFCAB5;
 }
 /*TOP BAR*/
 .topBar{
