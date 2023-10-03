@@ -4,10 +4,12 @@ AUTHOR: Dylan Barkley (DGB)
 CREATE DATE: 20 Sep 2023
 PURPOSE: Simulate a lotto drawing that uses balls with integers on them.
 THEME: Lottery Simulator/Lottery Webpage | REQ 2: THEME
-LAST MODIFIED ON: -
+LAST MODIFIED ON: 22 Sep 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-
+22 Sep 2023 - Added header to get deleted (DGB)
+22 Sep 2023 - Added Added inner vs textContent elements (DGB)
+22 Sep 2023 - Added added list for winning numbers (DGB)
 -->
 <!DOCTYPE HTML> <!--REQ 1: Create a new HTML file-->
 <html lang="en-US">
@@ -17,6 +19,33 @@ MODIFICATION HISTORY:
         <link rel = "stylesheet" type = "text/css" href = "https://cs.iupui.edu/~dgbarkle/n341/LAB2/css/lab2.css">
     </head>
     <body>
-        <h1>wip</h1>
+        <div id = "topBar">
+            <span class = "barItem" id = "dayItem">Day: </span>
+            <span class = "barItem" id = "hourItem">Time: </span>
+            <span class = "barItem" id = "drawingItem">Drawing Tonight: </span>
+            <span class = "barItem" id = "bonusNight">Bonus Day: </span>
+            <a class ="barItem" href = "https://cs.iupui.edu/~dgbarkle/n341/">Index</a>
+        </div>
+        <h1 id = "mainHeader">Nines Balls - Lotto Sim</h1>
+        <h5><sup>(Text content was changed)</sup></h5> 
+        <h2 id = "subHeaderOld">Winning Balls:</h2>
+        <h5><sup>(Subheader ID was changed)</sup></h5> 
+        <h2 id = "toDelete">Delete Me!</h2>
+        <ul id = "winningNums"></ul>
+
+        <h5><sup>(Array output using Loop)</sup></h5> 
+        <h5><sup>(1st and 2nd show difference using parse int)</sup></h5> 
+        <h5><sup>(3rd shows result of Truthy vs Falsy value)</sup></h5> 
+        <h5><sup>(4th - 6th shows changing format, content, and class)</sup></h5> 
+
+        <div class = "requiredInfo">
+            <div class = "hiddenInfo">
+                <h3 id = "inner">innerHTML</h3>
+                <h3 id = "txtCont">textContent</h3>
+            </div>
+            <h4>Hover above for textContent vs innerHTML</h4>
+        </div>
+
+        <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB2/js/lab2.js"></script>
     </body>
 </html>

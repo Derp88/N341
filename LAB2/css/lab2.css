@@ -3,10 +3,11 @@ TITLE: LAB-2 Nines Balls
 AUTHOR: Dylan Barkley (DGB)
 CREATE DATE: 20 Sep 2023
 PURPOSE: Styling for a lottery simulator page
-LAST MODIFIED ON: -
+LAST MODIFIED ON: - 22 Sep 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-
+22 Sep 2023 - Added subHeaderNew (DGB)
+22 Sep 2023 - Removed unused classes (DGB)
 */
 body{
     background-color: #CBC6B0;
@@ -20,24 +21,46 @@ h2{
     text-align: center;
     color: #4C4940;
 }
+h4{
+    color: #4C4940;
+}
+h5{
+    text-align: center;
+    color: #4C4940;
+    margin:0;
+}
 p{
     color: #4C4940;
     text-align: center;
 }
+li{
+    list-style-type: none;
+    color: #4C4940;
+    text-align: center;
+}
+
+#subHeaderNew{
+    font-style: italic;
+}
+
+.specialNums{
+    color: red;
+}
 .requiredInfo{
     float: right;
     position: fixed;
-    bottom: 25px;
+    bottom: 0px;
 }
-.requiredArrays{
+.hiddenInfo{
     color: #CBC6B0;
 }
-.requiredArrays:hover{
+.hiddenInfo:hover{
     background-color: #4D4A41;
     color: #CFCAB5;
 }
+
 /*TOP BAR*/
-.topBar{
+#topBar{
     background-color: #B2AD98;
     overflow: hidden;
 }
@@ -49,22 +72,10 @@ p{
     background-color: #4D4A41;
     color: #CFCAB5;
 }
-.topBar span{
+#topBar span{
     float: left;
 }
-.topBar a{
+#topBar a{
     float: right;
 }
 /*END TOP BAR*/
-/*BOTTOM BAR*/
-.bottomBar{
-    background-color: #B2AD98;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0px;
-    width: 100%
-}
-.bottomBar span{
-    float: left;
-}
-/*END BOTTOM BAR*/
