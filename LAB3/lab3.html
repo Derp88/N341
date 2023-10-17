@@ -1,15 +1,15 @@
 <!--
 TITLE: LAB-3 Nines Balls
 AUTHOR: Dylan Barkley (DGB)
-CREATE DATE: 10 Oct 2023
+CREATE DATE: 3 Oct 2023
 PURPOSE: Simulate a lotto drawing that uses balls with integers on them.
 THEME: Lottery Simulator/Lottery Webpage | REQ 2: THEME
-LAST MODIFIED ON: 10 Oct 2023
+LAST MODIFIED ON: 6 Oct 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-22 Sep 2023 - 
-22 Sep 2023 - 
-22 Sep 2023 - 
+4 Oct 2023 - Split winningNums into 2 (DGB)
+6 Oct 2023 - Added paragraph explaining top bar (DGB)
+6 Oct 2023 - Added submit button (DGB)
 -->
 <!DOCTYPE HTML> <!--REQ 1: Create a new HTML file-->
 <html lang="en-US">
@@ -17,17 +17,49 @@ MODIFICATION HISTORY:
         <meta charset="UTF-8">
         <title>Dylan N341 LAB-3</title>
         <link rel = "stylesheet" type = "text/css" href = "https://cs.iupui.edu/~dgbarkle/n341/LAB3/css/lab3.css">
+        <!--TODO: Find a good icon. <link rel = "icon" type = "image/x-icon" href = "">-->
     </head>
     <body>
         <div id = "topBar">
-            <span class = "barItem" id = "dayItem">Day: </span>
-            <span class = "barItem" id = "hourItem">Time: </span>
-            <span class = "barItem" id = "drawingItem">Drawing Tonight: </span>
-            <span class = "barItem" id = "bonusNight">Bonus Day: </span>
-            <a class ="barItem" href = "https://cs.iupui.edu/~dgbarkle/n341/">Index</a>
+            <span id = "dayItem">Get Day</span>
+            <span id = "hourItem">Get Hour</span>
+            <span id = "minItem">Get Mins</span>
+            <span id = "secItem">Get Secs</span>
+            <span id = "showIDItem">Get ID</span>
+            <a href = "https://cs.iupui.edu/~dgbarkle/n341/">Index</a>
         </div>
-        <h1>Nines Balls - Lotto Sim</h1>
-
+        <p>Day/Hour: EvntList with parms parms vs w/out</p>
+        <p>Mouse Evnts: Day:click Mins:dblclick Sec: Hover</p>
+        <h1 id = "mainHeader">Nines Balls - Lotto Sim</h1>
+        <h5>Click the first num to show bubbling</h5>
+        <h5>Click the second num to show halt of bubbling</h5>
+        <h5>Press any key to highlight first bonus. Release any key to highlight second bonus</h5>
+        <ul id = "winningNums">
+            <li id = "firstWin">3</li>
+        </ul>
+        <ul id = "winningNums2">
+            <li id = "secondWin">5</li>
+            <li>2</li>
+            <li>6</li>
+            <li id = "bonus1">9</li>
+            <li>2</li>
+            <li>9</li>
+            <li id = "bonus2">2</li>
+            <li>0</li>
+        </ul>
+        <h3>Check your numbers!(focus/blur)</h3>
+        <div id = "checker">
+            <form id = "checkForm" onsubmit = "return false">
+                <input type = "number" id = "numberInput">
+                <input type = "submit" value = "Check">
+                <input type = "reset" value = "Retry">
+            </form>
+            <h5 id = "numberFeedback">TIP: Make sure to enter all NINE numbers</h5>
+            <h5>Check(Submit Event) Retry(Reset Event)</h5>
+            <h3 id = "status">Check to see if you are a winner!</h3>
+            <h5 id = "modDOM">No DOM changes yet!</h5>
+            <h1 id = "leave">.</h1>
+        </div>
         <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB3/js/lab3.js"></script>
     </body>
 </html>
