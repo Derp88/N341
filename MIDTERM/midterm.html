@@ -7,7 +7,7 @@ THEME: Lottery Simulator/Lottery Webpage
 LAST MODIFIED ON: 16 Oct 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-16 Oct 2023 - S (DGB)
+17 Oct 2023 - Fixed HTML errors (DGB)
 -->
 <!DOCTYPE HTML> <!--REQ 1: Create a new HTML file-->
 <html lang="en-US">
@@ -17,4 +17,48 @@ MODIFICATION HISTORY:
         <link rel = "stylesheet" type = "text/css" href = "https://cs.iupui.edu/~dgbarkle/n341/MIDTERM/css/midterm.css">
         <!--TODO: Find a good icon. <link rel = "icon" type = "image/x-icon" href = "">-->
     </head>
+    <body>
+        <div id = "topBar">
+            
+            <span id = "dayItem">Day: </span>
+            <span id = "hourItem">Click Hour</span>
+            <span id = "secItem">Hover Secs</span>
+            <span id = "amountItem">Amount: </span>
+            
+            <span id = "ticketItemOG">Ticket Cost: </span>
+            <span id = "ticketItem">Ticket Cost Tomorrow: </span>
+            <a href = "https://cs.iupui.edu/~dgbarkle/n341/">Index</a>
+        </div>
+
+        <h1 id = "mainHeader">Nines Balls - Lotto Sim</h1>
+        <h4 id = "key">Gamble Away! (press key)</h4>
+        <h4>Winning Numbers: </h4>
+        <h5>(ParseInt, Truthy, Loop, innerHTML, click 2 for bubble, 0 for halt&eventObj)</h5>
+        
+        <ul id = "winningNums">
+        </ul>
+
+        <ul id = "winningNums2">
+            <li id = "firstWin">2</li>
+        </ul>
+        <ul id = "winningNums3">
+            <li id = "secondWin">0</li>
+        </ul>
+        <h4 class = "changeClass">Check your numbers!(focus/blur)</h4>
+        <h4 class = "changeClass">Best of Luck! (selectClass)</h4>
+        <div id = "checker">
+            <form id = "checkForm" onsubmit = "return false">
+                <input type = "number" id = "numberInput">
+                <input type = "submit" value = "Check">
+            </form>
+        
+            <h5 id = "numberFeedback">TIP: Make sure to enter all NINE numbers</h5>
+            <h4 id = "status">Check to see if you are a winner!</h4>
+            <h5 id = "modDOM">No DOM changes yet!</h5>
+            <h1 id = "leave">.</h1>
+            <h1 id = "removeHeader">Remove me please!</h1>
+        </div>
+
+        <script src = "https://cs.iupui.edu/~dgbarkle/n341/MIDTERM/js/midterm.js"></script>
+    </body>
 </html>
