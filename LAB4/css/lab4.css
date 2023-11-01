@@ -12,7 +12,7 @@ body{
     background-color: #CBC6B0;
     margin: 0;
 }
-h1{
+#mainHeader{
     text-align: center;
     color: #4C4940;
 }
@@ -41,6 +41,9 @@ li{
 }
 .bonusNum2{
     color: blue;
+}
+.boldFont{
+    font-weight: bold;
 }
 /*TOP BAR*/
 #topBar{
