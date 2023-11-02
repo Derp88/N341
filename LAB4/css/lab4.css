@@ -3,10 +3,10 @@ TITLE: LAB-4 Nines Balls
 AUTHOR: Dylan Barkley (DGB)
 CREATE DATE: 31 Oct 2023
 PURPOSE: Styling for a lottery simulator page
-LAST MODIFIED ON: - 31 Oct 2023
+LAST MODIFIED ON: - 1 Nov  2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-31 Oct 2023 - 
+1 Nov  2023 - Removed uneeded CSS color classes
 */
 body{
     background-color: #CBC6B0;
@@ -35,12 +35,6 @@ li{
     color: #4C4940;
     text-align: center;
     font-size: large;
-}
-.bonusNum1{
-    color: red;
-}
-.bonusNum2{
-    color: blue;
 }
 .boldFont{
     font-weight: bold;
@@ -72,14 +66,6 @@ li{
 #checker{
     /*border: 3px solid green; use this to show div size if needed*/
     text-align: center;
-}
-#checker input[type="number"]{
-    background-color: #4D4A41;
-    color: #CFCAB5;
-}
-#checker input[type="submit"]{
-    background-color: #4D4A41;
-    color: #CFCAB5;
 }
 #checker input[type="reset"]{
     background-color: #4D4A41;

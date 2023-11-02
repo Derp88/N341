@@ -4,10 +4,10 @@ AUTHOR: Dylan Barkley (DGB)
 CREATE DATE: 31 Oct 2023
 PURPOSE: Simulate a lotto drawing that uses balls with integers on them.
 THEME: Lottery Simulator/Lottery Webpage | REQ 2: THEME
-LAST MODIFIED ON: 31 Oct 2023
+LAST MODIFIED ON: 1 Nov  2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
-31 Oct 2023 - 
+1 Nov 2023 - Added icon and image that can be dragged around
 -->
 <!DOCTYPE HTML> <!--REQ 1: Create a new HTML file-->
 <html lang="en-US">
@@ -15,34 +15,57 @@ MODIFICATION HISTORY:
         <meta charset="UTF-8">
         <title>Dylan N341 LAB-4</title>
         <link rel = "stylesheet" type = "text/css" href = "https://cs.iupui.edu/~dgbarkle/n341/LAB4/css/lab4.css">
-        <!--TODO: Find a good icon. <link rel = "icon" type = "image/x-icon" href = "">-->
+        <link rel = "icon" type = "image/x-icon" href = "ball.png">
     </head>
     <body>
         <div id = "topBar">
             <span id = "dayItem">Day: </span>
             <span id = "hourItem">Hour: </span>
             <span id = "minItem">Mins:</span>
-            <!--<span id = "secItem">Secs: </span>
-            <span id = "showIDItem">Get ID</span>-->
+            <span id = "secItem">Secs: </span>
             <a href = "https://cs.iupui.edu/~dgbarkle/n341/">Index</a>
         </div>
+        <h5>Bold Bar Elements: REQ 5 & 15 (Select Multiple, Add Class)
+        # Italic Day Item: REQ 6 (Select Single)
+        # Underline Hour Item: REQ 7(Filter)
+        # All: REQ 8(jQuery to change content)</h5>
+        <h5>Click or Hover elements to show .on() (REQ 17) & REQ 18: Day/Item respond dif due to event obj</h5>
 
         <h1>Nines Balls - Lotto Sim</h1>
+        <h5>Header: Add id (REQ 15), chaining (REQ 11), show effects (REQ 19)<br>
+        Bold Nums: using .each() & $(this)<br>
+        fitst num: change color with .css()<br>
+        sec num: changed html<br>
+        third num: changed text<br>
+        4th&5th num change color using DOM<br>
+        last num: append used</h5>
         <ul id = "winningNums">
             <li id = "firstWin">3</li>
-            <li id = "secondWin">5</li>
-            <li>2</li>
+            <li id = "secondWin">0</li>
+            <li id = "thirdWin">0</li>
             <li>6</li>
-            <li id = "bonus1">9</li>
-            <li>2</li>
+            <li>9</li>
+            <li id = "6Win">2</li>
             <li>9</li>
             <li id = "bonus2">2</li>
-            <li>0</li>
         </ul>
+        <div id = "checker">
+            <h5>Input & Submit have color using form selector (REQ 21)</h5>
+            <form id = "checkForm" onsubmit = "return false">
+                <input type = "text" id = "numberInput">
+                <input type = "submit" value = "Check">
+            </form>
+        </div>
 
         <p id = "removeMe">Remove Me!</p>
 
+        <div id = "draggable">
+            <p>Drag Me! (Plugin)</p>
+            <img src="ball.png" alt = "Lottery Ball">
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!--REQ 4: Google jQuery-->
+        <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB4/js/jquery-ui-1.13.2/jquery-ui.js"></script> <!--REQ 23: jQuery plugin-->
         <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB4/js/lab4.js"></script>
     </body>
 </html>
