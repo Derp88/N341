@@ -1,0 +1,73 @@
+/*
+TITLE: LAB-5 Nines Balls
+AUTHOR: Dylan Barkley (DGB)
+CREATE DATE: 25 Nov 2023
+PURPOSE: Styling for a lottery simulator page
+LAST MODIFIED ON: - 25 Nov 2023
+LAST MODIFIED BY: Dylan Barkley (DGB)
+MODIFICATION HISTORY:
+
+*/
+body{
+    background-color: #CBC6B0;
+    margin: 0;
+}
+#mainHeader{
+    text-align: center;
+    color: #4C4940;
+}
+h3{
+    text-align: center;
+    color: #4C4940;
+    margin:0;
+}
+h5{
+    text-align: center;
+    color: #4C4940;
+    margin:0;
+}
+p{
+    color: #4C4940;
+    margin:0;
+}
+li{
+    list-style-type: none;
+    color: #4C4940;
+    text-align: center;
+    font-size: large;
+}
+.boldFont{
+    font-weight: bold;
+}
+/*TOP BAR*/
+#topBar{
+    background-color: #B2AD98;
+    overflow: hidden;
+}
+#topBar span{
+    float: left;
+    color: #4C4940;
+    padding: 0.65em 1em;
+}
+#topBar span:hover{
+    background-color: #4D4A41;
+    color: #CFCAB5;
+}
+#topBar a{
+    float: right;
+    color: #4C4940;
+    padding: 0.65em 1em;
+}
+#topBar a:hover{
+    background-color: #4D4A41;
+    color: #CFCAB5;
+}
+/*END TOP BAR*/
+#checker{
+    /*border: 3px solid green; use this to show div size if needed*/
+    text-align: center;
+}
+#checker input[type="reset"]{
+    background-color: #4D4A41;
+    color: #CFCAB5;
+}
