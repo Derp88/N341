@@ -15,11 +15,59 @@ MODIFICATION HISTORY:
         <meta charset="UTF-8">
         <title>Dylan N341 LAB-5</title>
         <link rel = "stylesheet" type = "text/css" href = "https://cs.iupui.edu/~dgbarkle/n341/LAB5/css/lab5.css">
+        <link rel="stylesheet" href="https://cs.iupui.edu/~dgbarkle/n341/LAB5/js/jquery-ui-1.13.2.custom/jquery-ui.css">
         <link rel = "icon" type = "image/x-icon" href = "ball.png">
     </head>
     <body>
+        <h1>Nines Balls - Lotto Sim</h1>
+        <div id = "tabs">
+            <div  id = "topBar">
+                <ul>
+                    <li> <a href = "#tab_1"><span>Tab One</span></a></li>
+                    <li> <a href = "#tab_ticket"><span>Check Ticket</span></a></li>
+                </ul>
+            </div>
+            <div id = "tab_1">
+                <p>test tab!</p>
+            </div>
+            <div id = "tab_ticket">
+                <h3>Check your ticket here!</h3>
+                <br>
+                <form action = "get">
+                    <h5>Are you over 18? (Can you legally gamble?)</h5>
+                    <input type = "radio" id = "ageTrue" name = "age" value = "true">
+                    <label for = "ageTrue">Yes</label>
+                    <input type = "radio" id = "ageFalse" name = "age" value = "false">
+                    <label for = "ageTrue">No</label>
+
+                    <br>
+                    <br>
+                    <h5>Please enter your email (In case you are a winner)</h5>
+                    <input type = "email" id = "emailInput" class = "inputs">
+
+                    <br>
+                    <br>
+                    <h5>Please enter your ticket number</h5>
+                    <input type = "text" id = "numberInput" class = "inputs">
 
 
+                    <br>
+                    <br>
+                    <input type = "submit" id = "submitButton" value = "submit">
+                    <input type = "reset" id = "resetButton" value = "retry">
+                </form>
+                <br>
+                <div>
+                    <h3>You Submitted: </h3>
+                    <h5 id = "ageSubmit">Over 18: </h5>
+                    <h5 id = "emailSubmit">Email: </h5>
+                    <h5 id = "ticketSubmit">Ticket Number: </h5>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB5/js/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
         <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB5/js/lab5.js"></script>
     </body>
 </html>
