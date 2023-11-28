@@ -7,7 +7,12 @@ THEME: Lottery Simulator/Lottery Webpage | REQ 2: THEME
 LAST MODIFIED ON: 25 Nov 2023
 LAST MODIFIED BY: Dylan Barkley (DGB)
 MODIFICATION HISTORY:
+    26 Nov 2023 - Added index tab (DGB)
 
+BROWSERS | REQ: 14
+Firefox: Worked fine
+Chrome: Worked fine
+Microsoft Edge: Worked fine, without any issues
 -->
 <!DOCTYPE HTML> <!--REQ 1: Create a new HTML file-->
 <html lang="en-US">
@@ -23,18 +28,25 @@ MODIFICATION HISTORY:
         <div id = "tabs">
             <div  id = "topBar">
                 <ul>
-                    <li> <a href = "#tab_1"><span>Tab One</span></a></li>
                     <li> <a href = "#tab_ticket"><span>Check Ticket</span></a></li>
+                    <li> <a href = "#tab_1"><span>Current Winning Ticket</span></a></li>
+                    <li> <a href = "https://cs.iupui.edu/~dgbarkle/n341/"><span>Index</span></a></li>
                 </ul>
             </div>
             <div id = "tab_1">
-                <p>test tab!</p>
+                <h3>Current winner is: 341232</h3>
             </div>
             <div id = "tab_ticket">
                 <h3>Check your ticket here!</h3>
                 <br>
-                <form action = "get">
-                    <h5>Are you over 18? (Can you legally gamble?)</h5>
+                <form id = "mainForm" method = "get"> <!--REQ 7: Use get-->
+                    <h5>Please enter your ticket number (Numbers only)</h5> <!--REQ 6: Input-->
+                    <input type = "text" name = "ticketName" id = "numberInput" placeholder = "123456" class = "inputs">
+                    <h5 id = "numFeedback">Feedback: </h5>
+
+                    <br>
+                    <br>
+                    <h5>Are you over 18? (Can you legally gamble?)</h5> <!--REQ 6: Input-->
                     <input type = "radio" id = "ageTrue" name = "age" value = "true">
                     <label for = "ageTrue">Yes</label>
                     <input type = "radio" id = "ageFalse" name = "age" value = "false">
@@ -42,22 +54,16 @@ MODIFICATION HISTORY:
 
                     <br>
                     <br>
-                    <h5>Please enter your email (In case you are a winner)</h5>
-                    <input type = "email" id = "emailInput" class = "inputs">
+                    <h5>Please enter your email (In case you are a winner)</h5> <!--REQ 6: Input-->
+                    <input type = "email" name = "emailName" id = "emailInput" class = "inputs">
 
                     <br>
-                    <br>
-                    <h5>Please enter your ticket number</h5>
-                    <input type = "text" id = "numberInput" class = "inputs">
-
-
-                    <br>
-                    <br>
-                    <input type = "submit" id = "submitButton" value = "submit">
+                    <br> <!--REQ 7: Submit and Reset-->
+                    <input type = "submit" name="submit_btn" id = "submitButton" value = "Submit">
                     <input type = "reset" id = "resetButton" value = "retry">
                 </form>
                 <br>
-                <div>
+                <div> <!--REQ 8: Output area-->
                     <h3>You Submitted: </h3>
                     <h5 id = "ageSubmit">Over 18: </h5>
                     <h5 id = "emailSubmit">Email: </h5>
@@ -66,7 +72,7 @@ MODIFICATION HISTORY:
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!--REQ 3: Include jQuery-->
         <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB5/js/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
         <script src = "https://cs.iupui.edu/~dgbarkle/n341/LAB5/js/lab5.js"></script>
     </body>
