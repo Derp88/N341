@@ -2,11 +2,13 @@ body{
     background-color: #CBC6B0;
     margin: 0;
 }
-h1{
+#headerMain{ /* A hack solution is still a solution...*/
     text-align: center;
     color: #4C4940;
     padding: 0.65em 1em;
-}
+} /*An elaboration on this...if this index was loaded in another page, it would copy these CSS rules into said page. 
+    Effectivly duplicating some things such as h1, and doubling their size. Unique ID's solve this, though not the 
+    root issue of the CSS getting loaded in the first place.*/
 .linksDiv{
     display: inline-block;
     text-align: left;
@@ -18,7 +20,7 @@ a{
     color: #4C4940;
     padding: 0.65em 1em;
 }
-li{
+.listz{
     padding: 0.65em 1em;
 }
 a:hover{

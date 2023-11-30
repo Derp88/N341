@@ -1,0 +1,59 @@
+<!--
+TITLE: Final Nines Balls
+AUTHOR: Dylan Barkley (DGB)
+CREATE DATE: 28 Nov 2023
+PURPOSE: Simulate a lotto drawing that uses balls with integers on them.
+THEME: Lottery Simulator/Lottery Webpage
+LAST MODIFIED ON: 28 Nov 2023
+LAST MODIFIED BY: Dylan Barkley (DGB)
+MODIFICATION HISTORY:
+-->
+<!DOCTYPE HTML> <!--REQ 1: Create a new HTML file-->
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dylan N341 Final</title>
+        <link rel = "stylesheet" type = "text/css" href = "https://cs.iupui.edu/~dgbarkle/n341/FINAL/css/final.css">
+        <link rel="stylesheet" href="https://cs.iupui.edu/~dgbarkle/n341/FINAL/js/jquery-ui-1.13.2.custom/jquery-ui.css">
+        <link rel = "icon" type = "image/x-icon" href = "ball.png">
+    </head>
+    <body>
+        <h1>Nines Balls - Lotto Sim</h1>
+        <!--DIV FOR HOLDING TAB STRUCTURE-->
+        <div id = "tabs">
+            <!--NAV BAR FOR PAGE-->
+            <div id = "navBar">
+                <ul>
+                    <li> <a href = "#currentNum"><span>Current Winner</span></a></li>
+                    <li> <a href = "#checkNum"><span>Check Ticket</span></a></li>
+                    <li> <a href = "#info"><span>Information</span></a></li>
+                    <li> <a href = "https://cs.iupui.edu/~dgbarkle/n341/"><span>Index</span></a></li>
+                </ul>
+            </div>
+            <!--NAV BAR TABS-->
+            <!--TAB ONE. CURRENT NUMBER-->
+            <div id = "currentNum">
+                <h3>test</h3>
+            </div>
+
+            <!--TAB TWO. CHECK TICKET-->
+            <div id = "checkNum">
+                <h3>baaaa</h3>
+            </div>
+            <div id = "info">
+                <h3 id = "dayItem">Current Date: </h3>
+                <h3 id = "amountItem">Current Jackpot:</h3>
+
+
+                <h1 id = "toDelete">DELETE ME!</h1>
+            </div>
+        </div>
+        
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!--REQ 3: Include jQuery-->
+        <script src = "https://cs.iupui.edu/~dgbarkle/n341/FINAL/js/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+        <script src = "https://cs.iupui.edu/~dgbarkle/n341/FINAL/js/final.js"></script>
+    </body>
+    
+</html>
